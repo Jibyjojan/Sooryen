@@ -23,3 +23,40 @@
 //    If the user clicks "Add New" and the input is empty, 
 //    the new item's title needs to default to Title {number} (ex: Title 6 or Title 7)
 //    depending on the number of items already on the page
+
+$(document).ready(function(){
+
+$("#title1").click(function(){
+   	 	$("#description1").toggle();
+  });
+ 
+ $("#title2").click(function(){
+   	 	$("#description2").toggle();
+  });
+
+ $("#title3").click(function(){
+   	 	$("#description3").toggle();
+  });
+
+ $("#title4").click(function(){
+   	 	$("#description4").toggle();
+  });
+
+$("#close1").click(function(){
+  $("#item1").remove();
+ });
+
+$("#close2").click(function(){
+  $("#item2").remove();
+ });
+
+$("#close3").click(function(){
+    $("#item3").remove();
+  });
+
+$("#close4").click(function(){
+    $("#item4").remove();
+  });
+
+
+});

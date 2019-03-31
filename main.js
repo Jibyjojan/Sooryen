@@ -56,6 +56,8 @@ $("#close4").click(function(){
     $("#item4").remove();
   });
 
+
+
 $(".add").click(function(){
 itemno++;
 
@@ -64,14 +66,16 @@ var titleid='title'+itemno;
 var closeid='close'+itemno;
 
 var newt = $('#newtitle').val();
-
+if(newt.length==0)
+{
+newt="Title "+itemno;
+}
 var html='';
 
 html='<div class="item" id="'+itemid+'"><h1 class="title"id="'+titleid+'">'+newt+'</h1><span class="close" id="'+closeid+'">x</span><p class="description"id="description5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id scelerisque lacus, rutrum lobortis nisl. Ut dapibus, quam in auctor pharetra, nibh erat pharetra velit, vitae tristique mauris dui quis.</p></div>';
 
     $(".item-list").append(html);
-
-
-
   });
+
+
 });

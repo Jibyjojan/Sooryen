@@ -18,6 +18,7 @@ width: 500px;
 
 }
 .item-list{
+
 display:block;
 }
 
@@ -27,23 +28,27 @@ display:block;
   //border: 1px solid gray;
 background-color:#DB4006;
   display: block;
+
 }
 
 
 .title  { 
 clear:both ;
 background-color:#DB4006;float:left;
+width: 90%;
 color:#ffffff; 
 padding-left: 10px;
-
+text-align: left;
 
 }
  .close { 
- 
+ width: 6%;
 background-color:#DB4006;float:left;
 padding-right: 10px;
+margin-top: 21px;
 font-size: 2em;
-float:right
+float:right;
+text-align: center;
 
  }
 .description {
